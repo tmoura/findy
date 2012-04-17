@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Alo Mundo, Findy!!</string>
+    <string name="hello">Alo Mundo!!</string>
     <string name="de">Onde você está?</string>
     <string name="para">Onde quer chegar?</string>
     <string name="botaoir">  Ir  </string>
