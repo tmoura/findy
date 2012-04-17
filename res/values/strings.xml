@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Alo Mundo, FindyActivity!!!</string>
+    <string name="hello">Alo Mundo!!</string>
+    <string name="de">Onde você está?</string>
+    <string name="para">Onde quer chegar?</string>
+    <string name="botaoir">  Ir  </string>
     <string name="app_name">Findy</string>
 
 </resources>
