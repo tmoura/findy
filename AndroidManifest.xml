@@ -7,11 +7,9 @@
     <uses-sdk android:minSdkVersion="10" />
 
     <application
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:icon="@drawable/ic_launcher">
         <activity
-            android:name=".FindyActivity"
-            android:label="@string/app_name" >
+            android:name=".FindyActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,8 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TelaPara"
-            android:label="@string/app_name" >
+            android:name=".TelaPara">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
