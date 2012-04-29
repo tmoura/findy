@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="app_name">Findy</string>
     <string name="de">Onde você está?</string>
     <string name="para">Onde quer chegar?</string>
     <string name="botaoir">  Ir  </string>
     <string name="logo">Findy the Way</string>
-
+	
+    <string name="opt1">Opção 1</string>
+    <string name="opt2">Opção 2</string>
+    <string name="opt3">Opção 3</string>
+    <string name="opt4">Opção 4</string>
+    
+    <string name="telaOpt">Testando tela de opções</string>
 </resources>

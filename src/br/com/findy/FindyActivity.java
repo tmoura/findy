@@ -3,6 +3,8 @@ package br.com.findy;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -30,4 +32,38 @@ public class FindyActivity extends Activity implements OnClickListener{
     	i.putExtras(params);
     	startActivity(i);
     }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    	menu.add(Menu.NONE, 0, Menu.NONE, getString(R.string.opt1));
+    	menu.add(Menu.NONE, 1, Menu.NONE, getString(R.string.opt2));
+    	menu.add(Menu.NONE, 2, Menu.NONE, getString(R.string.opt3));
+    	menu.add(Menu.NONE, 3, Menu.NONE, getString(R.string.opt4));
+       
+    	return true;
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+ 
+        switch (item.getItemId()) {
+            case 0:
+            	chamaTela();
+                return true;
+            case 1:
+            	chamaTela();
+                return true;
+            case 2:
+            	chamaTela();
+                return true;
+            default:
+            	chamaTela();
+                return true;
+        }
+    }
+    
+	private void chamaTela(){
+	    Intent i = new Intent(this,TelaOpt.class);
+		startActivity(i);
+	}
 }
