@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -35,33 +36,42 @@ public class FindyActivity extends Activity implements OnClickListener{
     
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+    	/*
     	menu.add(Menu.NONE, 0, Menu.NONE, getString(R.string.opt1));
     	menu.add(Menu.NONE, 1, Menu.NONE, getString(R.string.opt2));
     	menu.add(Menu.NONE, 2, Menu.NONE, getString(R.string.opt3));
     	menu.add(Menu.NONE, 3, Menu.NONE, getString(R.string.opt4));
-       
+       */
+    	MenuInflater inflater = getMenuInflater();
+    	inflater.inflate(R.layout.menu, menu);
+
     	return true;
     }
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
- 
+    	
         switch (item.getItemId()) {
-            case 0:
+            case R.id.download:
+            	chamaTelaDownload();
+            	break;
+            case R.id.opt2:
             	chamaTela();
-                return true;
-            case 1:
+            	break;
+            case R.id.opt3:
             	chamaTela();
-                return true;
-            case 2:
+                break;
+            case R.id.opt4:
             	chamaTela();
-                return true;
-            default:
-            	chamaTela();
-                return true;
+                break;
         }
+        return true;
     }
     
+	private void chamaTelaDownload(){
+	    Intent i = new Intent(this,AndroidFileDownloader.class);
+		startActivity(i);
+	}
 	private void chamaTela(){
 	    Intent i = new Intent(this,TelaOpt.class);
 		startActivity(i);

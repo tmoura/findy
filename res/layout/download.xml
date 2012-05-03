@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background">
+    
+   <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@color/botao"
+        android:orientation="vertical" >
+	</LinearLayout>
+	
+       <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo" android:paddingTop="10dp"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="25dp" >
+    
+    <TextView
+        android:id="@+id/status_text_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status_text_default"
+        android:textColor="@color/fonte"
+        android:textStyle="italic" />
+    
+    <EditText
+        android:id="@+id/url_input"
+        android:text="http://"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    
+    <Button
+        android:id="@+id/download_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:background="@color/botao"
+        android:text="Download" />
+
+    </RelativeLayout>
+</TableLayout>

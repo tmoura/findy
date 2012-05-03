@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/download" 
+	    android:title="@string/download" 
+	    android:icon= "@drawable/gear"/>
+	<item android:id="@+id/opt2" 
+	    android:title="@string/opt2" 
+	    android:icon= "@drawable/lock"/>
+	<item android:id="@+id/opt3" 
+	    android:title="@string/opt3" 
+	    android:icon= "@drawable/marker"/>
+	<item android:id="@+id/opt4"
+	    android:title="@string/opt4" 
+	    android:icon= "@drawable/gear"/>
+</menu>

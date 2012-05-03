@@ -11,6 +11,19 @@
     <string name="opt2">Opção 2</string>
     <string name="opt3">Opção 3</string>
     <string name="opt4">Opção 4</string>
+    <string name="download">Download</string>
     
     <string name="telaOpt">Testando tela de opções</string>
+    
+    <string name="status_text_default">Entre com a URL do arquivo para download</string>
+    <string name="progress_dialog_title_downloading">Baixando...</string>
+    <string name="progress_dialog_title_connecting">Conectando...</string>
+    <string name="progress_dialog_message_prefix_downloading">Arquivo baixado</string>
+    <string name="progress_dialog_message_prefix_connecting">Conectando a</string>
+    <string name="user_message_download_complete">Download completo!</string>
+    <string name="user_message_download_canceled">Download cancelado!</string>
+    <string name="error_message_bad_url">Erro: URL inválida!</string>
+    <string name="error_message_file_not_found">Erro: Arquivo não encontrado!</string>
+    <string name="error_message_general">Erro baixando arquivo!</string>
+
 </resources>
